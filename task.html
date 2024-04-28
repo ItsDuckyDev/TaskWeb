@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for the task dashboard */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .dashboard {
+            padding: 20px;
+        }
+        .section-title {
+            margin-bottom: 20px;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .task-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .task-form {
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="dashboard">
+                    <img src="https://cdn.discordapp.com/attachments/1232916631378726953/1234219185434005586/ckuSTAl.png?ex=662fefb0&is=662e9e30&hm=bc397f9f756d469676463b9bae24737477271204cbe4faca50ca3e1939f1ad7a&" alt="Logo" class="logo">
+                    <h1 class="title is-3 section-title">Task Dashboard</h1>
+                    
+                    <div class="task-form">
+                        <form action="#" method="POST">
+                            <div class="field">
+                                <label class="label">Task Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Enter task name" name="task_name">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Description</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Enter task description" name="task_description"></textarea>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit">Create Task</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="task-list">
+                        <h2 class="subtitle is-4">Current Tasks:</h2>
+                        <div class="task-item">
+                            <p><strong>Task 1:</strong> NuroMusic - On Work</p>
+                            <p>NuroMusic Play Music But On The middle NuroMusic Stops The Music without somoene to say.</p>
+                        </div>
+                        <div class="task-item">
+                            <p><strong>Task 2:</strong> NuroAI - Done!</p>
+                            <p>Everything Is Done When new task from itsduckydev it will be shown here!.</p>
+                        </div>
+                        <div class="task-item">
+                            <p><strong>Task 3:</strong> NuroBot - Bot is On Setup</p>
+                            <p>itsduckydev is setuping the bot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
